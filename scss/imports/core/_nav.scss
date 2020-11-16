@@ -1,0 +1,106 @@
+nav{
+    display: none;
+    background: transparent;
+    @include transition($t);
+    .menu__mobile{
+        --height:100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px 15px 0px;
+        .humberger{
+            @include transition($t);
+            display: block;
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            width: 50px;
+            height: 40px;
+            font-size: 0;
+            text-indent: -9999px;
+            cursor: pointer;
+            @include transition($t);
+            background: none;
+            span{
+                display: block;
+                position: absolute;
+                top: 19px;
+                left: 10px;
+                right: 10px;
+                height: 2px;
+                background: #99B1DA;
+                @include transition($t);
+                &:after, &:before{
+                    position: absolute;
+                    display: block;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #99B1DA;
+                    content: "";
+                    @include transition($t);
+                }
+                &:before{
+                    bottom: -9px;
+                    @include transition($t);
+                }
+                &:after{
+                    top: -9px;
+                    @include transition($t);
+                }
+            }
+            &.active{
+                @include transition($t);
+                span{
+                    background: 0 0;
+                    &:after{
+                        top: 0;
+                        transform: rotate(45deg);
+                        @include transition($t);
+                    }
+                    &:before{
+                        top: 0;
+                        transform: rotate(-45deg);
+                        @include transition($t);
+                    }
+                }
+            }
+        }
+    }
+    .menu__content{
+        display: none;
+        padding: 0 15px;
+        width: 100%;
+        height: 100vh;
+        background-color: #06132B;
+        ul{
+            li{
+                width: 100%;
+                display: inline-flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 0;
+                border-top: 1px solid #99B1DA80;
+                a{
+                    @include text(20px,H, $lh-text, $white-cl, none);
+                }
+            }
+            ul{
+                padding-left: 15px;
+                display: none;
+                &.active{
+                    display: block;
+                    @include transition($t);
+                }
+            }
+        }
+        &.active{
+            display: block;
+            @include transition($t);
+        }
+    }
+    @include tablet{
+        display: block;
+    }
+}
