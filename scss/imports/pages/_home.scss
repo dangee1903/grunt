@@ -156,6 +156,7 @@
                 display: inline-flex;
                 z-index: 5;
                 span{
+                    cursor: pointer;
                     margin-right: 5px;
                     width: 10px;
                     height: 10px;
@@ -395,9 +396,51 @@
             }
         }
     }
+    .sologan{
+        --height:310px;
+        background:url(../img/background-sologan.png) no-repeat #F9F9F9;
+        background-size: 100%;
+        // padding: 50px 0;
+        height: var(--height);
+        .container{
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            height: 100%;
+            .sologan__text{
+                @include text(26px,RB,$lh-text,$black-cl,none);
+                h2.yellow{
+                    color: #FFA800;
+                }
+                h2.white{
+                    color: $white-cl;
+                }
+            }
+        }
+        @include desktop{
+            --height: 190px;
+        }
+        @include tablet{
+            --height: 150px;
+            .container{
+                .sologan__text{
+                    font-size:20px;
+                }
+            }
+        }
+        @include mobile{
+            --height: 80px;
+            .container{
+                justify-content: center;
+                .sologan__text{
+                    display: none;
+                }
+            }
+        }
+    }
     .news{
         background: #F9F9F9;
-        padding-bottom: 80px;
+        padding: 50px 0;
         .container{
             >h2{
                 @include text(30px,RB,$lh-text,$black-cl,none);
@@ -447,6 +490,7 @@
             }
         }
         @include desktop{
+            padding:0;
             .container{
                 .new__content{
                     flex-direction: column;

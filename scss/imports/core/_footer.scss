@@ -1,4 +1,6 @@
 footer {
+	background:url(../img/background_end.png) bottom no-repeat;
+	background-size: 100%;
 	.container{
 		.logo{
 			display: flex;
@@ -35,27 +37,46 @@ footer {
 				padding: 5px 0;
 			}
 		}
-		@include mobile{
-			.footer__content{
-				flex-direction: column;
+		.end{
+			padding-top:50px;
+			height: 280px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			color: white;
+			a{
+				color: white;
+				padding-right: 10px;
+			}
+		}
+		@include desktop{
+			.end{
+				height: 130px;
 			}
 		}
 		@include tablet{
 			.footer__content{
 				text-align: center;
 			}
+			.end{
+				height: 130px;
+			}
 		}
-	}
-	@include desktop {
-		
-	}
-	@include tablet {
-		
-	}
-	@include mobile {
-		
-	}
-	@include mobile-xxs {
-		
+		@include mobile{
+			.footer__content{
+				flex-direction: column;
+			}
+			.end{
+				padding-top:0;
+				height: 35px;
+				a{
+					font-size: 10px;
+					white-space: nowrap; 
+				}
+				p{
+					font-size: 10px;
+				}
+			}
+		}
 	}
 }

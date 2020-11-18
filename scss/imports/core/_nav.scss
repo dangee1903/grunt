@@ -83,7 +83,7 @@ nav{
                 padding: 20px 0;
                 border-top: 1px solid #99B1DA80;
                 a{
-                    @include text(20px,H, $lh-text, $white-cl, none);
+                    @include text(12px,H, $lh-text, $white-cl, none);
                 }
             }
             ul{
