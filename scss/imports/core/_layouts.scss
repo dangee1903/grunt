@@ -13,7 +13,7 @@ body {
     width: 100%;
     -webkit-font-smoothing: antialiased;
     margin: auto;
-    @include text($fz-text, GSB, $lh-text, $text-cl, none);
+    @include text($fz-text, H, $lh-text, $text-cl, none);
     // background: $white-cl;
     position: relative;
     margin: 0 auto;

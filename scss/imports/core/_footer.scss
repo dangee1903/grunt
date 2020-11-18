@@ -1,4 +1,51 @@
 footer {
+	.container{
+		.logo{
+			display: flex;
+			justify-content: center;
+			padding: 30px 0;
+		}
+		.footer__content{
+			display: flex;
+			justify-content: space-between;
+			.ftcon{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 20px 0;
+				h2{
+					@include text(14px,RB,$lh-text,$black-cl,none);
+				}
+				a{
+					@include text(12px,H,$lh-text,#666666,none);
+					padding: 5px 0;
+				}
+			}
+		}
+		.company{
+			padding-top: 30px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			h2{
+				@include text(14px,RB,$lh-text,$black-cl,none);
+			}
+			p{
+				@include text(12px,H,$lh-text,#666666,none);
+				padding: 5px 0;
+			}
+		}
+		@include mobile{
+			.footer__content{
+				flex-direction: column;
+			}
+		}
+		@include tablet{
+			.footer__content{
+				text-align: center;
+			}
+		}
+	}
 	@include desktop {
 		
 	}
