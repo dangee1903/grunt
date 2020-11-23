@@ -128,3 +128,26 @@
     height: 1px;
     background-color: #00000038;
 }
+.pagination{
+    width: 100%;
+    padding:20px 0px 60px 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    @include text(12px,HM, $lh-text, $black-cl, none);
+    a{
+        color: $black-cl;
+    }
+    i{
+        padding:0 10px;
+    }
+}
+.title{
+    width: 100%;
+    text-align: center;
+    @include text(40px,RB, $lh-text, $black-cl, none);
+    padding-bottom:20px;
+    @include mobile{
+        @include text(20px,RB, $lh-text, $black-cl, none);
+    }
+}

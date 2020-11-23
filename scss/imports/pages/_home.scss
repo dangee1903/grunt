@@ -446,6 +446,10 @@
                 @include text(30px,RB,$lh-text,$black-cl,none);
                 padding-bottom: 30px;
             }
+            .content-img{
+                display: flex;
+                align-items: center;
+            }
             .new__content{
                 display: flex;
                 justify-content: space-between;

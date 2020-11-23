@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>FastCA</title>
-    <link rel="icon" href="">
+    <link rel="icon" href="img/fastca.png">
     <meta name="title" content="" />
     <meta name="description" content="" />
     <meta property="og:locale" content="vi" />
@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="dest/fonts.css">
     <link rel="stylesheet" href="dest/stylelibs.min.css">
 </head>
+    <div class="loader-wrap">
+        <div class="loader"></div>
+    </div>
     <div class="background">
         <img src="img/background.png" alt="">
     </div>
@@ -85,7 +88,7 @@
                 </div>
                 <div class="btn yellow">
                     <div class="btn__wrap">
-                        <a href="#">Hỗ Trợ</a>
+                        <a href="#" class="hotro">Hỗ Trợ</a>
                     </div>
                 </div>
             </div>
@@ -100,7 +103,7 @@
                     <div class="banner__content-tuvan">
                         <div class="btn blue">
                             <div class="btn__wrap">
-                                <a href="#">Cần tư vấn</a>
+                                <a href="#" class="hotro">Cần tư vấn</a>
                             </div>
                         </div>
                         <p>Cần tư vấn? Chúng tôi sẽ liên hệ với bạn.</p>
@@ -118,30 +121,30 @@
         </section>
         <section class="slide">
             <div class="container">
-                <div class="dot">
-                </div>
                 <div class="slide__wrap main-carousel">
                     <div class="slide__wrap-item carousel-cell">
                         <div class="slide__wrap-text">
                             <h2>Các sự kiện đang diễn ra</h2>
                             <p>Hiện nay, chữ ký số FastCA đang được Tổng cục Thuế, Tổng cục Hải quan, Bảo hiểm xã hội, Bộ Y tế,... và các Bộ/Ban/Ngành khác sử dụng.</p>
                         </div>
-                        <img src="https://via.placeholder.com/1331x250" alt="">
+                        <a href="https://cyberlotus.com/"><img src="https://via.placeholder.com/2000x250" alt=""></a>
                     </div>
                     <div class="slide__wrap-item carousel-cell">
                         <div class="slide__wrap-text">
                             <h2>Các sự kiện đang diễn ra</h2>
                             <p>Hiện nay, chữ ký số FastCA đang được Tổng cục Thuế, Tổng cục Hải quan, Bảo hiểm xã hội, Bộ Y tế,... và các Bộ/Ban/Ngành khác sử dụng.</p>
                         </div>
-                        <img src="https://via.placeholder.com/1331x250" alt="">
+                        <a href="https://cyberlotus.com/"><img src="https://via.placeholder.com/2000x250" alt=""></a>
                     </div>
                     <div class="slide__wrap-item carousel-cell">
                         <div class="slide__wrap-text">
                             <h2>Các sự kiện đang diễn ra</h2>
                             <p>Hiện nay, chữ ký số FastCA đang được Tổng cục Thuế, Tổng cục Hải quan, Bảo hiểm xã hội, Bộ Y tế,... và các Bộ/Ban/Ngành khác sử dụng.</p>
                         </div>
-                        <img src="https://via.placeholder.com/1331x250" alt="">
+                        <a href="https://cyberlotus.com/"><img src="https://via.placeholder.com/2000x250" alt=""></a>
                     </div>
+                </div>
+                <div class="dot">
                 </div>
             </div>
         </section>
@@ -448,6 +451,37 @@
             </div>
         </div>
     </footer>
+    <div class="contact">
+        <div class="contact__wrap">
+            <div class="contact__wrap-text">
+                <p>Fastca service</p>
+                <a href="" class="close"><p>x</p></a>
+            </div>
+            <form action="#">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Họ và tên</label>
+                    <input type="text" class="form-control" placeholder="Nhập thông tin...">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Email</label>
+                    <input type="email" class="form-control" placeholder="Nhập thông tin...">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Số điện thoại</label>
+                    <input type="text" class="form-control" placeholder="Nhập thông tin...">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Tin nhắn</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <div class="my_btn">
+                    <p>Capcha</p>
+                    <div class="capcha"></div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
 <body>        
     <script type="text/javascript" src="dest/jsmain.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
